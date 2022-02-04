@@ -1,16 +1,22 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.section-title {
+  background-image: linear-gradient(106.23deg, #FB408F, #FAE937);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
-* {
-  box-sizing: border-box;
+.vercel-logo-icon {
+  -webkit-filter: invert(1);
+  filter: invert(1);
 }
+
