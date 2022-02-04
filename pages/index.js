@@ -7,17 +7,18 @@ import WannathisSection from '@Components/Sections/Products/WannathisSection';
 import SnapclipSection from '@Components/Sections/Products/SnapclipSection';
 import OpenSourceSection from '@Components/Sections/OpenSource/OpenSourceSection';
 import AboutMeSection from '@Components/Sections/About/AboutMeSection';
+import { Main } from '@Components/Layout/Layout.styled';
 
 export default function Home({ posts }) {
   return (
     <Layout>
-      <main className="flex flex-col text-white min-h-screen w-full justify-center">
+      <Main>
         <HeroSection />
         <WannathisSection />
         <SnapclipSection />
         <OpenSourceSection />
         <AboutMeSection />
-      </main>
+      </Main>
     </Layout>
   );
 }
