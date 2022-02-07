@@ -1,7 +1,10 @@
 import { ExternalLink } from "@Components/Common/ExternalLink";
+import { ThemeContext } from "../../../context/ThemeContext";
 import Image from "next/image";
+import { useContext } from "react";
 
 export default function AboutMeSection() {
+  const { theme } = useContext(ThemeContext);
   return (
     <section className="flex flex-col min-h-screen relative">
       <div className="container flex flex-col mx-auto z-20 lg:px-16 lg:mt-0 justify-start">
@@ -58,17 +61,17 @@ export default function AboutMeSection() {
             <div className="mt-32 mb-32">
               <div className="flex justify-center items-center space-x-4">
                 <a href="https://github.com/SiroDiaz" target="_blank" rel="noreferrer">
-                  <Image src="/icons/github.svg" width={36} height={36} alt="Github SiroDiaz" target="_blank" rel="noreferrer" />
+                  <Image className={`${theme === 'light' ? 'invert' : ''}`} src="/icons/github.svg" width={36} height={36} alt="Github SiroDiaz" target="_blank" rel="noreferrer" />
                 </a>
                 <a href="https://www.linkedin.com/in/siro-diaz-palaz%C3%B3n-a67b1342/" target="_blank" rel="noreferrer">
-                  <Image src="/icons/linkedin.svg" width={36} height={36} alt="LinkedIn Siro Díaz Palazón" />
+                  <Image className={`${theme === 'light' ? 'invert' : ''}`} src="/icons/linkedin.svg" width={36} height={36} alt="LinkedIn Siro Díaz Palazón" />
                 </a>
                 <a href="https://twitter.com/Siro_Diaz" target="_blank" rel="noreferrer">
-                  <Image src="/icons/twitter.svg" width={36} height={36} alt="Twitter Siro_Diaz" />
+                  <Image className={`${theme === 'light' ? 'invert' : ''}`} src="/icons/twitter.svg" width={36} height={36} alt="Twitter Siro_Diaz" />
                 </a>
               </div>
               <div className="flex justify-center items-center mt-5">
-                <span className="border-4 rounded-full border-white bg-transparent w-3 h-3" />
+                <span className="border-4 rounded-full border-black dark:border-white bg-transparent w-3 h-3" />
               </div>
               <div className="mt-5 text-center">
                 <a href="mailto:sirodiaz93@gmail.com">sirodiaz93@gmail.com</a>

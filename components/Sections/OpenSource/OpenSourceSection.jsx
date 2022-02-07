@@ -1,10 +1,13 @@
+import { ThemeContext } from "context/ThemeContext";
 import Image from "next/image";
+import { useContext } from "react";
 
 export default function OpenSourceSection() {
+  const { theme } = useContext(ThemeContext);
   return (
     <section className="flex flex-col relative mb-10">
       <div className="absolute inset-0 left-0 bottom-0 z-10">
-        <Image src="/vectors/figure-open-source.svg" width={254} height={485} alt="Open Source" className="absolute inset-0 left-0 bottom-0" />
+        <Image src="/vectors/figure-open-source.svg" width={254} height={485} alt="Open Source" className={`absolute inset-0 left-0 bottom-0 ${theme === 'light' ? 'invert' : ''}`} />
       </div>
 
       <div className="container flex flex-col mx-auto z-20 lg:px-16 lg:mt-0 justify-start">
@@ -35,10 +38,10 @@ export default function OpenSourceSection() {
               <ul className="list-none">
                 <li className="mb-3">
                   <a href="#" target="_blank" className="flex justify-start space-x-3">
-                    <div className="text-xl font-bold text-white">
+                    <div className="text-xl font-bold dark:text-white">
                       sphinxql
                     </div>
-                    <span className="text-white font-light text-xl">-</span>
+                    <span className="dark:text-white font-light text-xl">-</span>
                     <div className="text-xl" style={{ color: '#2B7489' }}>
                       SphinxQL query builder for Node.js.
                     </div>
@@ -47,10 +50,10 @@ export default function OpenSourceSection() {
 
                 <li className="mb-3">
                   <a href="#" target="_blank" className="flex justify-start space-x-3">
-                    <div className="text-xl font-bold text-white">
+                    <div className="text-xl font-bold dark:text-white">
                       Base62
                     </div>
-                    <span className="text-white font-light text-xl">-</span>
+                    <span className="dark:text-white font-light text-xl">-</span>
                     <div className="text-xl" style={{ color: '#4F5D95' }}>
                       PHP Base62 encoder and decorder for big numbers.
                     </div>
@@ -59,7 +62,7 @@ export default function OpenSourceSection() {
 
                 <li className="mb-3">
                   <a href="#" target="_blank" className="flex justify-start space-x-3">
-                    <div className="text-xl font-bold text-white">
+                    <div className="text-xl font-bold dark:text-white">
                       laravel-redirection
                     </div>
                     <span className="text-white font-light text-xl">-</span>
@@ -71,10 +74,10 @@ export default function OpenSourceSection() {
 
                 <li className="mb-3">
                   <a href="#" target="_blank" className="flex justify-start space-x-3">
-                    <div className="text-xl font-bold text-white">
+                    <div className="text-xl font-bold dark:text-white">
                       php-klaviyo-api
                     </div>
-                    <span className="text-white font-light text-xl">-</span>
+                    <span className="dark:text-white font-light text-xl">-</span>
                     <div className="text-xl" style={{ color: '#4F5D95' }}>
                       Low level but elegant Klaviyo full API wrapper.
                     </div>
