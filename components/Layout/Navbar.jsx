@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import { useContext } from 'react';
+import { ThemeContext } from '../../context/ThemeContext';
+import { FiMoon, FiSun } from "react-icons/fi";
 import {
   HeaderLink,
   NavbarBrand,
@@ -7,6 +10,8 @@ import {
 } from './Navbar.styled';
 
 export default function Navbar() {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  
   return (
     <NavbarContainer>
       <NavbarInnerContainer>
@@ -17,12 +22,16 @@ export default function Navbar() {
           </HeaderLink>
         </NavbarBrand>
 
-        <div className="space-x-4">
+        <div className="flex justify-center space-x-4">
           <HeaderLink href="#products">Productos</HeaderLink>
           <HeaderLink href="#opensource">Open Source</HeaderLink>
           {/*<HeaderLink href="#">Dev Blog</HeaderLink>*/}
           <HeaderLink href="#aboutme">Sobre mí</HeaderLink>
-          
+          <span onClick={toggleTheme} className='inline-flex justify-center items-center hover:cursor-pointer'>
+            { theme === 'light'
+            ? <FiSun className="text-2xl" /> 
+            : <FiMoon color={`${theme === 'dark' ? '#fff' : '#010101'}`} />}
+          </span>
         </div>
       </NavbarInnerContainer>
     </NavbarContainer>

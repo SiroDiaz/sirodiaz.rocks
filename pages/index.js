@@ -8,18 +8,21 @@ import SnapclipSection from '@Components/Sections/Products/SnapclipSection';
 import OpenSourceSection from '@Components/Sections/OpenSource/OpenSourceSection';
 import AboutMeSection from '@Components/Sections/About/AboutMeSection';
 import { Main } from '@Components/Layout/Layout.styled';
+import { ThemeProvider } from '../context/ThemeContext';
 
 export default function Home({ posts }) {
   return (
-    <Layout>
-      <Main>
-        <HeroSection />
-        <WannathisSection />
-        <SnapclipSection />
-        <OpenSourceSection />
-        <AboutMeSection />
-      </Main>
-    </Layout>
+    <ThemeProvider>
+      <Layout>
+        <Main>
+          <HeroSection />
+          <WannathisSection />
+          <SnapclipSection />
+          <OpenSourceSection />
+          <AboutMeSection />
+        </Main>
+      </Layout>
+    </ThemeProvider>
   );
 }
 
