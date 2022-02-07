@@ -28,20 +28,20 @@ export default function AboutMeSection() {
               <div className="flex flex-1 px-3">
                 <p>
                 Me llamo Siro Díaz Palazón, soy un desarrollador de software y un apasionado de la tecnología.
-                Vivo actualmente en la ciudad de Murcia (España), lugar del que no me iría por nada en el mundo por el valor sentimental que le tengo a esta tierra.
+                Vivo actualmente en la ciudad de Murcia (España).
                 <br /><br />
                 Me encantan los deportes de raqueta, especialmente pádel y tenis, este último lo practiqué desde los 6 añitos hasta que decidí decantarme por la informática. Rondaría los 17 años de edad cuando pasó eso.
                 <br /><br />
                 Desde entonces mi vida ha sido estudiar/aprender cosas relacionadas con el mundo de la web que fue lo que me deslumbró una vez llegó la conexión a Internet a casa.
                 <br /><br />
-                Entré a estudiar el grado en ingeniería informática en la Universidad de Murcia allá por el 2012 y abandoné (por tercer curso) sin finalizar esos estudios a los que le dedique una pequeña parte de mi tiempo allá por el 2018/2019.
+                Entré a estudiar el grado en ingeniería informática en la Universidad de Murcia allá por el 2012 y abandoné por tercer curso.
                 <br /><br />
-                Abandonar no significaba para mí el tener que renunciar el tener que trabajar de lo que me gusta.
+                Abandonar no significaba para mí el tener que renunciar a poder trabajar de lo que me gusta.
                 <br />
                 Ya mucho antes de abandonar la Universidad estaba trabajando de prácticas para la misma Universidad de Murcia y gracias a ello conseguí hacer un proyecto para la Fundación Telefónica.
                 He trabajado como autónomo para proyectos que me han supuesto un reto de formación en nuevas áreas como es la de los motores de búsqueda, scraping, etc.
                 <br />
-                Todo esto lo compaginaba con el desarrollo de mis propias ideas, que con mi persistencia siempre he finalizado. Si se trata de algo que me gusta y en lo que creo, voy hasta el final con ello.
+                Todo esto lo compaginaba con el desarrollo de mis propias ideas, que con mi perseverancia siempre he finalizado. Si se trata de algo que me gusta y en lo que creo, voy hasta el final con ello.
 
                 Hasta hace poco, he estado trabajando por segunda vez en una startup pequeña de ecommerce en mi ciudad (Murcia). En mis dos etapas he aprendido cosas para aplicar a mis proyectos: separar lo relevante de lo irrelevante, mentalidad LEAN, SEO y growth hacking.
                 <br /><br />
