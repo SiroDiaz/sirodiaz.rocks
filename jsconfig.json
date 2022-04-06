@@ -2,8 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@Components/*": ["./components/*"],
-      "@Lib/*": ["./lib/*"]
+      "@Components/*": ["./src/components/*"],
+      "@Lib/*": ["./src/lib/*"]
     }
   },
   "exclude": ["node_modules", ".next"]

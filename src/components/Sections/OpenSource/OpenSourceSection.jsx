@@ -1,4 +1,4 @@
-import { ThemeContext } from "context/ThemeContext";
+import { ThemeContext } from "../../../context/ThemeContext";
 import Image from "next/image";
 import { useContext } from "react";
 
