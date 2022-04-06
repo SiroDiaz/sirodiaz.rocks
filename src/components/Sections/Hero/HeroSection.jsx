@@ -27,30 +27,30 @@ export default function HeroSection() {
             </div>
 
             <div className="mt-16">
-              <p className="text-red-300 font-bold text-3xl">Software, SEO, Growth hacking</p>
+              <p className="text-red-400 font-bold text-3xl">Software, SEO, Growth hacking</p>
             </div>
 
             <div className="mt-16 flex flex-row space-x-5">
               <div className='flex flex-col'>
                 <p className="text-lg">Edad</p>
-                <p className="text-xl font-bold text-red-300">28</p>
+                <p className="text-xl font-bold text-red-400">28</p>
               </div>
 
               <div className='flex flex-col'>
                 <p className="text-lg">Soy de</p>
-                <p className="text-xl font-bold text-red-300">Murcia, España</p>
+                <p className="text-xl font-bold text-red-400">Murcia, España</p>
               </div>
 
               <div className='flex flex-col'>
                 <p className="text-lg">Lenguajes favoritos</p>
-                <p className="text-xl font-bold text-red-300">PHP y JS</p>
+                <p className="text-xl font-bold text-red-400">PHP y JS</p>
               </div>
             </div>
           </div>
           
           <div className="w-full flex justify-center lg:max-w-[50%]">
             <figure className='max-w-[100%]'>
-              <Image className="rounded-bl-full rounded-br-full mx-auto" src="/img/my-profile-art-brightness.png" width="581" height="463" alt="Figure" />  
+              <Image className="rounded-bl-full rounded-br-full mx-auto" src="/img/my-profile-hd.png" width="383" height="542" alt="Figure" />  
             </figure>
           </div>
         </div>
@@ -59,7 +59,7 @@ export default function HeroSection() {
           <a href="https://github.com/SiroDiaz" target="_blank" rel="noreferrer">
             <Image className={`${theme === 'light' ? 'invert' : ''}`} src="/icons/github.svg" width={24} height={24} alt="Github SiroDiaz" target="_blank" rel="noreferrer" />
           </a>
-          <a href="https://www.linkedin.com/in/siro-diaz-palaz%C3%B3n-a67b1342/" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/sirodiaz/" target="_blank" rel="noreferrer">
             <Image className={`${theme === 'light' ? 'invert' : ''}`} src="/icons/linkedin.svg" width={24} height={24} alt="LinkedIn Siro Díaz Palazón" />
           </a>
           <a href="https://twitter.com/Siro_Diaz" target="_blank" rel="noreferrer">

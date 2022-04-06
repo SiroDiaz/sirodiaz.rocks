@@ -63,7 +63,7 @@ export default function AboutMeSection() {
                 <a href="https://github.com/SiroDiaz" target="_blank" rel="noreferrer">
                   <Image className={`${theme === 'light' ? 'invert' : ''}`} src="/icons/github.svg" width={36} height={36} alt="Github SiroDiaz" target="_blank" rel="noreferrer" />
                 </a>
-                <a href="https://www.linkedin.com/in/siro-diaz-palaz%C3%B3n-a67b1342/" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/sirodiaz/" target="_blank" rel="noreferrer">
                   <Image className={`${theme === 'light' ? 'invert' : ''}`} src="/icons/linkedin.svg" width={36} height={36} alt="LinkedIn Siro Díaz Palazón" />
                 </a>
                 <a href="https://twitter.com/Siro_Diaz" target="_blank" rel="noreferrer">
