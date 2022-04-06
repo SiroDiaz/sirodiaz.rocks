@@ -35,8 +35,6 @@ export default function WannathisSection() {
       </div>
 
       <div className="relative w-full flex flex-1 mt-10 mb-20 overflow-hidden z-10">
-        <img src="/img/wishlist-1.png" height={100} className="absolute shadow-lg invisible 2xl:visible rounded-2xl left-16 border-2 border-neutral-200 z-20" alt="Wannathis" />
-        <img src="/img/wishlist-2.png" height={100} className="absolute shadow-lg invisible 2xl:visible rounded-2xl bottom-40 border-2 border-neutral-200 left-40 z-20" alt="Wannathis" />
         
         <div className="relative mx-auto pb-24 lg:-right-20 w-full flex justify-end items-end">
           <div className="h-auto drop-shadow-2xl">
