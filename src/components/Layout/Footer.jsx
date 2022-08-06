@@ -1,20 +1,21 @@
 import Image from 'next/image';
-import { MainFooter } from './Footer.styled';
+import { Credits, FooterCredits, ImageCredits, MainFooter } from './Footer.styled';
 
 export function Footer() {
   return (
-    <MainFooter>
-      <a
-        className="my-5 text-neutral-900 dark:text-white"
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by{' '}
-        <span>
-          <Image className="dark:invert" src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </span>
-      </a>
+    <MainFooter className="bg-neutral-100 dark:bg-neutral-800">
+      <FooterCredits>
+        <Credits>
+          <span>Crafted with ❤️ by Siro</span>
+          <ImageCredits
+            src="/site-icons/favicon-32x32.png"
+            className="rounded-full"
+            alt="Logo de sirodiaz.rocks"
+            width={32}
+            height={32}
+          />
+        </Credits>
+      </FooterCredits>
     </MainFooter>
   )
 }

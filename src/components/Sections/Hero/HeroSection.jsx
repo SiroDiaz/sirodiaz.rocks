@@ -50,7 +50,7 @@ export default function HeroSection() {
           
           <div className="w-full flex justify-center lg:max-w-[50%]">
             <figure className='max-w-[100%]'>
-              <Image className="rounded-bl-full rounded-br-full mx-auto" src="/img/my-profile-hd.png" width="383" height="542" alt="Figure" />  
+              <Image className="mx-auto" src="/img/my-profile-hd.png" width="383" height="542" alt="Figure" />  
             </figure>
           </div>
         </div>
