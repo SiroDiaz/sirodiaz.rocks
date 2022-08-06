@@ -9,7 +9,7 @@ export default function SnapclipSection() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <section className="flex flex-col min-h-screen relative">
+    <section className="flex flex-col relative lg:min-h-screen">
       <div className="container flex flex-col mx-auto lg:px-16 lg:mt-0 justify-start">
           <div className="w-full flex justify-center flex-col px-3 lg:px-0">
             <div>

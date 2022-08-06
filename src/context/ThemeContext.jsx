@@ -37,7 +37,7 @@ export const ThemeProvider = ({ children }) => {
 
       updateThemeClass();
     }
-  }, [mounted]);
+  }, [mounted, theme]);
 
   const body = (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>

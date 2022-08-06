@@ -10,10 +10,10 @@ export default function AboutMeSection() {
       <div className="container flex flex-col mx-auto z-20 lg:px-16 lg:mt-0 justify-start">
         <div className="lg:space-x-5 flex">
           <div className="w-full flex justify-center flex-col lg:px-0">
-            <div className="mb-7">
+            <div className="mb-16">
               <h2
                 id="aboutme"
-                className="section-title font-bold text-4xl lg:text-5xl"
+                className="section-title font-bold text-4xl lg:text-5xl xl:text-7xl"
               >
                 Sobre mí
               </h2>
@@ -52,7 +52,7 @@ export default function AboutMeSection() {
 
             <div>
               <h2
-                className="section-title font-bold text-center text-4xl lg:text-5xl"
+                className="section-title font-bold text-center text-4xl lg:text-5xl xl:text-7xl"
               >
                 ¿Conectamos y Hablamos?
               </h2>

@@ -3,14 +3,14 @@ import Image from "next/image";
 
 export default function WannathisSection() {
   return (
-    <section className="flex flex-col min-h-screen relative">
+    <section className="flex flex-col relative lg:min-h-screen">
       <div className="container flex flex-col mx-auto lg:px-16 mt-24 lg:mt-0 justify-start">
         <div className="lg:space-x-5 flex">
           <div className="w-full flex justify-center flex-col px-3 lg:px-0">
-            <div className="mb-7">
+            <div className="mb-16">
               <h2
                 id="products"
-                className="section-title font-bold text-4xl lg:text-5xl"
+                className="section-title font-bold text-4xl lg:text-5xl xl:text-7xl"
               >
                 Productos Activos
               </h2>
@@ -34,7 +34,7 @@ export default function WannathisSection() {
         </div>
       </div>
 
-      <div className="relative w-full flex flex-1 mt-10 mb-20 overflow-hidden z-10">
+      <div className="relative w-full flex flex-1 mt-10 mb-10 lg:mb-20 overflow-hidden z-10">
         
         <div className="relative mx-auto pb-24 lg:-right-20 w-full flex justify-end items-end">
           <div className="h-auto drop-shadow-2xl">

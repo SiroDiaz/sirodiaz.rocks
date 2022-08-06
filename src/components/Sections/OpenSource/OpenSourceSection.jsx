@@ -16,7 +16,7 @@ export default function OpenSourceSection() {
             <div className="mb-7">
               <h2
                 id="opensource"
-                className="section-title font-bold text-4xl lg:text-5xl"
+                className="section-title font-bold text-4xl lg:text-5xl xl:text-7xl"
               >
                 Open Source
               </h2>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useContext } from "react";
 
 export default function HeroSection() {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <section className='flex flex-col min-h-screen md:flex-row'>
@@ -11,8 +11,14 @@ export default function HeroSection() {
         <Image src="/vectors/figure-hero.svg" width="338" height="382" alt="Figure" />
       </div>
 
-      <div className="container flex flex-col mx-auto lg:mx-32 z-20 mt-36 lg:mt-32 justify-center items-center">
-        <div className="mx-auto lg:space-x-5 flex flex-col-reverse lg:flex-row">
+      <div className="container flex flex-col mx-auto lg:mx-32 z-20 justify-center items-center">
+        <div className="mx-auto lg:space-x-5 flex flex-col lg:flex-row">
+          <div className="w-full flex justify-center lg:max-w-[50%]">
+            <figure className='max-w-[100%]'>
+              <Image className="mx-auto" src="/img/my-profile-hd.png" width="383" height="542" alt="Figure" />  
+            </figure>
+          </div>
+          
           <div className="w-full flex justify-center flex-col lg:max-w-[50%] px-3">
             <div className='mb-7'>
               <span className="dark:text-white font-bold text-5xl">
@@ -22,36 +28,30 @@ export default function HeroSection() {
             <div className="inline-block">
               <span className="dark:text-white text-3xl">
                 <span>Soy </span>
-                <span className="text-red-400"><strong>Siro Díaz</strong></span>, emprendedor de productos digitales y desarrollador de software. Aprendo sobre:
+                <span className="text-red-500 dark:text-red-300"><strong>Siro Díaz</strong></span>, emprendedor de productos digitales y desarrollador de software. Aprendo sobre:
               </span>
             </div>
 
             <div className="mt-16">
-              <p className="text-red-400 font-bold text-3xl">Software, SEO, Growth hacking</p>
+              <p className="text-red-500 dark:text-red-300 font-bold text-3xl">Software, SEO, Growth hacking</p>
             </div>
 
             <div className="mt-16 flex flex-row space-x-5">
               <div className='flex flex-col'>
                 <p className="text-lg">Edad</p>
-                <p className="text-xl font-bold text-red-400">28</p>
+                <p className="text-xl font-bold text-red-500 dark:text-red-300">29</p>
               </div>
 
               <div className='flex flex-col'>
                 <p className="text-lg">Soy de</p>
-                <p className="text-xl font-bold text-red-400">Murcia, España</p>
+                <p className="text-xl font-bold text-red-500 dark:text-red-300">Murcia, España</p>
               </div>
 
               <div className='flex flex-col'>
                 <p className="text-lg">Lenguajes favoritos</p>
-                <p className="text-xl font-bold text-red-400">PHP y JS</p>
+                <p className="text-xl font-bold text-red-500 dark:text-red-300">PHP y JS</p>
               </div>
             </div>
-          </div>
-          
-          <div className="w-full flex justify-center lg:max-w-[50%]">
-            <figure className='max-w-[100%]'>
-              <Image className="mx-auto" src="/img/my-profile-hd.png" width="383" height="542" alt="Figure" />  
-            </figure>
           </div>
         </div>
 

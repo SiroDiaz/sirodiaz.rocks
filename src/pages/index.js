@@ -9,6 +9,7 @@ import OpenSourceSection from '@Components/Sections/OpenSource/OpenSourceSection
 import AboutMeSection from '@Components/Sections/About/AboutMeSection';
 import { Main } from '@Components/Layout/Layout.styled';
 import { ThemeProvider } from '../context/ThemeContext';
+import AffiliationToolsSection from '@Components/Sections/Products/AffiliationToolsSection';
 
 export default function Home({ posts }) {
   return (
@@ -17,6 +18,7 @@ export default function Home({ posts }) {
         <Main>
           <HeroSection />
           <WannathisSection />
+          <AffiliationToolsSection />
           <SnapclipSection />
           <OpenSourceSection />
           <AboutMeSection />

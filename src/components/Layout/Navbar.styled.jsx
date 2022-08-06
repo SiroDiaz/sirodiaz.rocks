@@ -1,7 +1,7 @@
 import tw from 'tailwind-styled-components';
 
 export const NavbarContainer = tw.nav`
-  fixed
+  sticky
   w-full
   flex
   flex-row
