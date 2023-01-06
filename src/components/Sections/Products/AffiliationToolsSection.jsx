@@ -25,8 +25,14 @@ export default function AffiliationToolsSection() {
       <div className="relative w-full flex flex-1 mt-10 mb-20 overflow-hidden z-10">
         
         <div className="relative mx-auto pb-24 w-full flex justify-center items-center">
-          <div className="min-h-[380px] h-full drop-shadow-2xl max-w-[1278px] w-full relative lg:min-h-[620px]">
-            <Image placeholder="empty" src="/img/affiliation.tools-screenshot.png" layout="fill" objectFit="contain" className="lg:rounded-bl-2xl lg:rounded-tl-2xl" alt="Wannathis" />
+          <div className="min-h-[380px] h-full drop-shadow-2xl w-full max-w-[1278px] relative lg:min-h-[620px]">
+            <Image
+              fill
+              placeholder="empty"
+              src="/img/affiliation.tools-screenshot.png"
+              className="lg:rounded-bl-2xl lg:rounded-tl-2xl object-contain"
+              alt="Wannathis"
+            />
           </div>
         </div>
       </div>
