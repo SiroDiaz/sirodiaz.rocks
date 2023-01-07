@@ -8,7 +8,7 @@ import SnapclipSection from '@Components/Sections/Products/SnapclipSection'
 import OpenSourceSection from '@Components/Sections/OpenSource/OpenSourceSection'
 import AboutMeSection from '@Components/Sections/About/AboutMeSection'
 import { Main } from '@Components/Layout/Layout.styled'
-import { ThemeProvider } from '../context/ThemeContext'
+import { ThemeProvider } from '@Context/ThemeContext'
 import AffiliationToolsSection from '@Components/Sections/Products/AffiliationToolsSection'
 
 export default function Home({ posts }) {
