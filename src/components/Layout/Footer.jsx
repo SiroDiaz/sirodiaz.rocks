@@ -1,5 +1,10 @@
-import Image from 'next/image';
-import { Credits, FooterCredits, ImageCredits, MainFooter } from './Footer.styled';
+import Image from 'next/image'
+import {
+  Credits,
+  FooterCredits,
+  ImageCredits,
+  MainFooter,
+} from './Footer.styled'
 
 export function Footer() {
   return (

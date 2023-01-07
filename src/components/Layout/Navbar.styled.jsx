@@ -1,4 +1,4 @@
-import tw from 'tailwind-styled-components';
+import tw from 'tailwind-styled-components'
 
 export const NavbarContainer = tw.nav`
   sticky
@@ -21,7 +21,7 @@ export const NavbarContainer = tw.nav`
   dark:bg-neutral-800
   dark:bg-opacity-60
   dark:text-white
-`;
+`
 
 export const NavbarInnerContainer = tw.div`
   container
@@ -34,7 +34,7 @@ export const NavbarInnerContainer = tw.div`
   py-3
 
   lg:flex-row
-`;
+`
 
 export const NavbarBrand = tw.div`
   flex
@@ -44,7 +44,7 @@ export const NavbarBrand = tw.div`
   mb-4
   
   lg:mb-0
-`;
+`
 
 export const HeaderLink = tw.a`
   font-semibold
@@ -52,4 +52,4 @@ export const HeaderLink = tw.a`
   lg:text-normal
   text-neutral-800
   dark:text-white
-`;
+`
