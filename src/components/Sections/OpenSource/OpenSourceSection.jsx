@@ -1,13 +1,21 @@
-import { ThemeContext } from "../../../context/ThemeContext";
-import Image from "next/image";
-import { useContext } from "react";
+import { ThemeContext } from '../../../context/ThemeContext'
+import Image from 'next/image'
+import { useContext } from 'react'
 
 export default function OpenSourceSection() {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext)
   return (
     <section className="flex flex-col relative mb-10">
       <div className="absolute inset-0 left-0 bottom-0 z-10">
-        <Image src="/vectors/figure-open-source.svg" width={254} height={485} alt="Open Source" className={`absolute inset-0 left-0 bottom-0 ${theme === 'light' ? 'invert' : ''}`} />
+        <Image
+          src="/vectors/figure-open-source.svg"
+          width={254}
+          height={485}
+          alt="Open Source"
+          className={`absolute inset-0 left-0 bottom-0 ${
+            theme === 'light' ? 'invert' : ''
+          }`}
+        />
       </div>
 
       <div className="container flex flex-col mx-auto z-20 lg:px-16 lg:mt-0 justify-start">
@@ -24,20 +32,34 @@ export default function OpenSourceSection() {
 
             <div className="mt-5">
               <p className="lg:max-w-[60%]">
-                A veces me gusta aportar código open source que necesito para alguno de mis proyectos o para los empresas y particulares para las que he trabajado.
-                Me siento más cómodo aportando en código backend, dado mi mayor interés por esa área del desarrollo.
-                <br /><br />
-                Si existe alguna librería o paquete que falla por algún lado ayudo notificando y, siempre que puedo, aportando la solución al error con los tests que sean necesarios.
-                <br /><br />
-                Me encantaría poder aportar más la verdad. Hay proyectos nuevos que son muy buenos sobre los que me gustaría aportar añadiendo integraciones o características nuevas (o incluso el mantenimiento de las mismas).
-                Estos son los proyectos que he iniciado y soy el principal mantenedor:
+                A veces me gusta aportar código open source que necesito para
+                alguno de mis proyectos o para los empresas y particulares para
+                las que he trabajado. Me siento más cómodo aportando en código
+                backend, dado mi mayor interés por esa área del desarrollo.
+                <br />
+                <br />
+                Si existe alguna librería o paquete que falla por algún lado
+                ayudo notificando y, siempre que puedo, aportando la solución al
+                error con los tests que sean necesarios.
+                <br />
+                <br />
+                Me encantaría poder aportar más la verdad. Hay proyectos nuevos
+                que son muy buenos sobre los que me gustaría aportar añadiendo
+                integraciones o características nuevas (o incluso el
+                mantenimiento de las mismas). Estos son los proyectos que he
+                iniciado y soy el principal mantenedor:
               </p>
             </div>
 
             <div className="flex mt-5 lg:ml-10">
               <ul className="list-none">
                 <li className="mb-3">
-                  <a href="https://github.com/SiroDiaz/sphinxql" target="_blank" rel="noreferrer" className="flex justify-start space-x-3">
+                  <a
+                    href="https://github.com/SiroDiaz/sphinxql"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex justify-start space-x-3"
+                  >
                     <div className="text-xl font-bold dark:text-white">
                       sphinxql
                     </div>
@@ -48,7 +70,12 @@ export default function OpenSourceSection() {
                 </li>
 
                 <li className="mb-3">
-                  <a href="https://github.com/SiroDiaz/Base62" target="_blank" rel="noreferrer" className="flex justify-start space-x-3">
+                  <a
+                    href="https://github.com/SiroDiaz/Base62"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex justify-start space-x-3"
+                  >
                     <div className="text-xl font-bold dark:text-white">
                       Base62
                     </div>
@@ -59,7 +86,12 @@ export default function OpenSourceSection() {
                 </li>
 
                 <li className="mb-3">
-                  <a href="https://github.com/SiroDiaz/laravel-redirection" target="_blank" rel="noreferrer" className="flex justify-start space-x-3">
+                  <a
+                    href="https://github.com/SiroDiaz/laravel-redirection"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex justify-start space-x-3"
+                  >
                     <div className="text-xl font-bold dark:text-white">
                       laravel-redirection
                     </div>
@@ -70,7 +102,12 @@ export default function OpenSourceSection() {
                 </li>
 
                 <li className="mb-3">
-                  <a href="https://github.com/SiroDiaz/php-klaviyo-api" target="_blank" rel="noreferrer" className="flex justify-start space-x-3">
+                  <a
+                    href="https://github.com/SiroDiaz/php-klaviyo-api"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex justify-start space-x-3"
+                  >
                     <div className="text-xl font-bold dark:text-white">
                       php-klaviyo-api
                     </div>
@@ -81,21 +118,26 @@ export default function OpenSourceSection() {
                 </li>
 
                 <li className="mb-3">
-                  <a href="https://github.com/SiroDiaz/manticore-migration" target="_blank" rel="noreferrer" className="flex justify-start space-x-3">
+                  <a
+                    href="https://github.com/SiroDiaz/manticore-migration"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex justify-start space-x-3"
+                  >
                     <div className="text-xl font-bold dark:text-white">
                       manticore-migration
                     </div>
                     <div className="text-xl" style={{ color: '#4F5D95' }}>
-                      Manticore-Migration is a CLI tool to keep sync your Manticore index schemas.
+                      Manticore-Migration is a CLI tool to keep sync your
+                      Manticore index schemas.
                     </div>
                   </a>
                 </li>
-                
               </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
