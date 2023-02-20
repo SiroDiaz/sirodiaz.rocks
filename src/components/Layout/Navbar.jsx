@@ -17,7 +17,7 @@ export default function Navbar() {
       <NavbarInnerContainer>
         <NavbarBrand>
           <Image
-            src="/site-icons/favicon-32x32.png"
+            src="/img/siro-diaz-squared.png"
             className="rounded-full"
             width={32}
             height={32}

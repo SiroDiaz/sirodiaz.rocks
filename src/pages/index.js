@@ -1,5 +1,3 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import Layout from '@Components/Layout/Layout'
 import { getAllFilesMetadata } from '@Lib/mdx'
 import HeroSection from '@Components/Sections/Hero/HeroSection'

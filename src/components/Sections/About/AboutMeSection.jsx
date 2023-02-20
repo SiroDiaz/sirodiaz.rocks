@@ -60,18 +60,24 @@ export default function AboutMeSection() {
                   Ya mucho antes de abandonar la Universidad estaba trabajando
                   de prácticas para la misma Universidad de Murcia y gracias a
                   ello conseguí hacer un proyecto para la Fundación Telefónica.
-                  He trabajado como autónomo para proyectos que me han supuesto
+                  He trabajado como freelance para proyectos que me han supuesto
                   un reto de formación en nuevas áreas como es la de los motores
                   de búsqueda, scraping, etc.
+                  <br />
                   <br />
                   Todo esto lo compaginaba con el desarrollo de mis propias
                   ideas, que con mi perseverancia siempre he finalizado. Si se
                   trata de algo que me gusta y en lo que creo, voy hasta el
-                  final con ello. Hasta hace poco, he estado trabajando por
-                  segunda vez en una startup pequeña de ecommerce en mi ciudad
-                  (Murcia). En mis dos etapas he aprendido cosas para aplicar a
-                  mis proyectos: separar lo relevante de lo irrelevante,
-                  mentalidad LEAN, SEO y growth hacking.
+                  final con ello. Estuve trabajando por segunda vez en una
+                  startup pequeña de ecommerce en mi ciudad (Murcia). En mis dos
+                  etapas he aprendido cosas para aplicar a mis proyectos:
+                  separar lo relevante de lo irrelevante, mentalidad LEAN, SEO y
+                  growth hacking.
+                  <br />
+                  <br />
+                  Actualmente, estoy trabajando en remoto para LaLiga,
+                  concretamente en el equipo web OTT de LaLigaTech como
+                  desarrollador frontend.
                   <br />
                   <br />
                   Si quieres saber mi stack tecnológico personal, con el que

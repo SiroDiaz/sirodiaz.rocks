@@ -8,9 +8,11 @@ const readexPro = Readex_Pro({
 })
 
 function MyApp({ Component, pageProps }) {
+  const getLayout = Component.layout || ((page) => page)
+
   return (
     <>
-      <Component {...pageProps} className={readexPro.className} />
+      {getLayout(<Component {...pageProps} className={readexPro.className} />)}
       <Analytics />
     </>
   )
