@@ -1,4 +1,4 @@
-import { ThemeContext } from '../../../context/ThemeContext'
+import { ThemeContext } from '@Context/ThemeContext'
 import Image from 'next/image'
 import { useContext } from 'react'
 
@@ -7,118 +7,75 @@ export default function HeroSection() {
 
   return (
     <section className="flex flex-col min-h-screen md:flex-row">
-      <div className="absolute z-10 top-0 left-0">
-        <Image
-          src="/vectors/figure-hero.svg"
-          width="338"
-          height="382"
-          alt="Figure"
-        />
-      </div>
-
       <div className="container flex flex-col mx-auto lg:mx-32 z-20 justify-center items-center">
         <div className="mx-auto lg:space-x-5 flex flex-col lg:flex-row">
-          <div className="w-full flex justify-center lg:max-w-[50%]">
-            <figure className="max-w-[100%]">
+          <div className="w-full top-10 max-w-[40%] flex justify-center lg:max-w-[40%]">
+            <figure className="max-w-[480px]">
               <Image
-                className="mx-auto"
-                src="/img/my-profile-hd.png"
-                width="383"
-                height="542"
-                alt="Figure"
+                className="mx-auto rounded-full"
+                src="/img/siro-diaz.png"
+                width="800"
+                height="800"
+                alt="Siro Díaz Palazón"
               />
             </figure>
           </div>
 
-          <div className="w-full flex justify-center flex-col lg:max-w-[50%] px-3">
+          <div className="relative w-full flex justify-center flex-col lg:max-w-[60%] px-3">
             <div className="mb-7">
-              <span className="dark:text-white font-bold text-5xl">Hola,</span>
+              <span className="dark:text-white font-bold text-6xl">Hola,</span>
             </div>
             <div className="inline-block">
-              <span className="dark:text-white text-3xl">
-                <span>Soy </span>
-                <span className="text-red-500 dark:text-red-300">
-                  <strong>Siro Díaz</strong>
+              <span className="dark:text-white font-semibold text-4xl">
+                <span>
+                  Soy Siro Díaz, emprendedor de productos digitales y
+                  desarrollador de software.
                 </span>
-                , emprendedor de productos digitales y desarrollador de
-                software. Aprendo sobre:
               </span>
             </div>
 
-            <div className="mt-16">
-              <p className="text-red-500 dark:text-red-300 font-bold text-3xl">
-                Software, SEO, Growth hacking
-              </p>
-            </div>
-
             <div className="mt-16 flex flex-row space-x-5">
-              <div className="flex flex-col">
-                <p className="text-lg">Edad</p>
-                <p className="text-xl font-bold text-red-500 dark:text-red-300">
-                  29
-                </p>
-              </div>
+              <div className="flex flex-col gap-y-3">
+                <p className="text-lg">Creo cosas con</p>
+                <div className="flex flex-row gap-3">
+                  <Image
+                    className={`${theme === 'light' ? '' : 'invert'}`}
+                    src="/icons/brand-php.svg"
+                    width={48}
+                    height={48}
+                    alt="PHP"
+                  />
 
-              <div className="flex flex-col">
-                <p className="text-lg">Soy de</p>
-                <p className="text-xl font-bold text-red-500 dark:text-red-300">
-                  Murcia, España
-                </p>
-              </div>
+                  <Image
+                    className={`${theme === 'light' ? '' : 'invert'}`}
+                    src="/icons/brand-typescript.svg"
+                    width={48}
+                    height={48}
+                    alt="Typescript"
+                  />
 
-              <div className="flex flex-col">
-                <p className="text-lg">Lenguajes favoritos</p>
-                <p className="text-xl font-bold text-red-500 dark:text-red-300">
-                  PHP y JS
-                </p>
+                  <Image
+                    className={`${theme === 'light' ? '' : 'invert'}`}
+                    src="/icons/brand-python.svg"
+                    width={48}
+                    height={48}
+                    alt="Typescript"
+                  />
+
+                  <Image
+                    className={`${theme === 'light' ? '' : 'invert'}`}
+                    src="/icons/brand-nextjs.svg"
+                    width={48}
+                    height={48}
+                    alt="Typescript"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="pt-32 flex justify-center items-center space-x-4">
-          <a
-            href="https://github.com/SiroDiaz"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Image
-              className={`${theme === 'light' ? 'invert' : ''}`}
-              src="/icons/github.svg"
-              width={24}
-              height={24}
-              alt="Github SiroDiaz"
-              target="_blank"
-              rel="noreferrer"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/sirodiaz/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Image
-              className={`${theme === 'light' ? 'invert' : ''}`}
-              src="/icons/linkedin.svg"
-              width={24}
-              height={24}
-              alt="LinkedIn Siro Díaz Palazón"
-            />
-          </a>
-          <a
-            href="https://twitter.com/Siro_Diaz"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Image
-              className={`${theme === 'light' ? 'invert' : ''}`}
-              src="/icons/twitter.svg"
-              width={24}
-              height={24}
-              alt="Twitter Siro_Diaz"
-            />
-          </a>
-        </div>
+        <div className="pt-32 flex justify-center items-center space-x-4"></div>
       </div>
     </section>
   )

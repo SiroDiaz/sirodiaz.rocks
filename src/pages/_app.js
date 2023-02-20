@@ -8,7 +8,7 @@ const readexPro = Readex_Pro({
 })
 
 function MyApp({ Component, pageProps }) {
-  const getLayout = Component.layout || ((page) => page);
+  const getLayout = Component.layout || ((page) => page)
 
   return (
     <>

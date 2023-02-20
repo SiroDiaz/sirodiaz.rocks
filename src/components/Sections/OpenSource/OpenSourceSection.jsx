@@ -1,6 +1,7 @@
 import { ThemeContext } from '../../../context/ThemeContext'
 import Image from 'next/image'
 import { useContext } from 'react'
+import ProjectList from './ProjectList'
 
 export default function OpenSourceSection() {
   const { theme } = useContext(ThemeContext)
@@ -52,88 +53,7 @@ export default function OpenSourceSection() {
             </div>
 
             <div className="flex mt-5 lg:ml-10">
-              <ul className="list-none">
-                <li className="mb-3">
-                  <a
-                    href="https://github.com/SiroDiaz/sphinxql"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex justify-start space-x-3"
-                  >
-                    <div className="text-xl font-bold dark:text-white">
-                      sphinxql
-                    </div>
-                    <div className="text-xl" style={{ color: '#2B7489' }}>
-                      SphinxQL query builder for Node.js.
-                    </div>
-                  </a>
-                </li>
-
-                <li className="mb-3">
-                  <a
-                    href="https://github.com/SiroDiaz/Base62"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex justify-start space-x-3"
-                  >
-                    <div className="text-xl font-bold dark:text-white">
-                      Base62
-                    </div>
-                    <div className="text-xl" style={{ color: '#4F5D95' }}>
-                      PHP Base62 encoder and decorder for big numbers.
-                    </div>
-                  </a>
-                </li>
-
-                <li className="mb-3">
-                  <a
-                    href="https://github.com/SiroDiaz/laravel-redirection"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex justify-start space-x-3"
-                  >
-                    <div className="text-xl font-bold dark:text-white">
-                      laravel-redirection
-                    </div>
-                    <div className="text-xl" style={{ color: '#4F5D95' }}>
-                      Laravel 8.x and 9.x package to manage URL redirections.
-                    </div>
-                  </a>
-                </li>
-
-                <li className="mb-3">
-                  <a
-                    href="https://github.com/SiroDiaz/php-klaviyo-api"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex justify-start space-x-3"
-                  >
-                    <div className="text-xl font-bold dark:text-white">
-                      php-klaviyo-api
-                    </div>
-                    <div className="text-xl" style={{ color: '#4F5D95' }}>
-                      Low level but elegant Klaviyo full API wrapper.
-                    </div>
-                  </a>
-                </li>
-
-                <li className="mb-3">
-                  <a
-                    href="https://github.com/SiroDiaz/manticore-migration"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex justify-start space-x-3"
-                  >
-                    <div className="text-xl font-bold dark:text-white">
-                      manticore-migration
-                    </div>
-                    <div className="text-xl" style={{ color: '#4F5D95' }}>
-                      Manticore-Migration is a CLI tool to keep sync your
-                      Manticore index schemas.
-                    </div>
-                  </a>
-                </li>
-              </ul>
+              <ProjectList />
             </div>
           </div>
         </div>
