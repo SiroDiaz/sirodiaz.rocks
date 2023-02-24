@@ -6,7 +6,7 @@ export default function HeroSection() {
   const { theme } = useContext(ThemeContext)
 
   return (
-    <section className="flex flex-col min-h-screen md:flex-row">
+    <section className="flex flex-col min-h-screen mx-auto md:flex-row">
       <div className="container flex flex-col mx-auto lg:mx-32 z-20 justify-center items-center">
         <div className="mx-auto lg:space-x-5 flex flex-col lg:flex-row">
           <div className="w-full top-10 max-w-[40%] flex justify-center lg:max-w-[40%]">
