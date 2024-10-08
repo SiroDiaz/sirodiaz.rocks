@@ -1,0 +1,96 @@
+---
+import { Image } from "astro:assets";
+---
+
+<div class="flex flex-grow flex-col justify-center items-center p-4">
+  <div class="relative max-w-xl bg-noise">
+    <div class="bg-gradient"></div>
+    <Image
+      src={"/assets/siro-diaz.png"}
+      alt="profile"
+      width={200}
+      height={200}
+      class="mb-6"
+    />
+    <h1 class="font-black text-3xl text-white">Siro Díaz Palazón</h1>
+    <h2 class="font-bold text-neutral-300 mt-1">
+      Frontend software Engineer @Sportian
+    </h2>
+    <p class="text-xl text-neutral-400 mt-2 mb-8">
+      Hi, I'm Siro. I'm a frontend software engineer at
+      <a
+        class="link link-hover text-white font-bold"
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        href="https://sportian.com">Sportian</a
+      >. I love to code, craft new amazing stuff and share my knowledge with
+      others. I'm a self-taught and curious person about everything that can be
+      done with code, SEO and a good UX.
+    </p>
+
+    <div class="flex flex-row gap-4 items-center my-2">
+      <span class="text-white font-bold text-xl">Projects</span>
+      <a
+        href="https://skinclaireroutine.com"
+        target="_blank"
+        class="link link-hover text-neutral-400 transition-all duration-300 hover:text-white hover:animate-pulse"
+      >
+        SkinClaireRoutine
+      </a>
+    </div>
+
+    <section class="flex flex-grow-0 flex-row items-center gap-4 my-2">
+      <h2 class="text-xl text-white font-bold">Find me on</h2>
+
+      <ul class="flex gap-4">
+        <li>
+          <a
+            href="https://github.com/siro-diaz"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="link link-hover text-neutral-400 transition-all duration-300 hover:text-white hover:animate-pulse"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/siro-diaz/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="link link-hover text-neutral-400 transition-all duration-300 hover:text-white hover:animate-pulse"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+<style>
+  .bg-noise {
+    @apply bg-no-repeat bg-cover bg-center bg-fixed rounded-full;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgNzAwIDcwMCIgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiPjxkZWZzPjxmaWx0ZXIgaWQ9Im5ubm9pc2UtZmlsdGVyIiB4PSItMjAlIiB5PSItMjAlIiB3aWR0aD0iMTQwJSIgaGVpZ2h0PSIxNDAlIiBmaWx0ZXJVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHByaW1pdGl2ZVVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJsaW5lYXJSR0IiPgoJPGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuMTAyIiBudW1PY3RhdmVzPSI0IiBzZWVkPSIxNSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgeD0iMCUiIHk9IjAlIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiByZXN1bHQ9InR1cmJ1bGVuY2UiPjwvZmVUdXJidWxlbmNlPgoJPGZlU3BlY3VsYXJMaWdodGluZyBzdXJmYWNlU2NhbGU9IjE1IiBzcGVjdWxhckNvbnN0YW50PSIwLjc1IiBzcGVjdWxhckV4cG9uZW50PSIyMCIgbGlnaHRpbmctY29sb3I9IiMyMzIwMjYiIHg9IjAlIiB5PSIwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgaW49InR1cmJ1bGVuY2UiIHJlc3VsdD0ic3BlY3VsYXJMaWdodGluZyI+CiAgICAJCTxmZURpc3RhbnRMaWdodCBhemltdXRoPSIzIiBlbGV2YXRpb249IjEwMCI+PC9mZURpc3RhbnRMaWdodD4KICAJPC9mZVNwZWN1bGFyTGlnaHRpbmc+CiAgCjwvZmlsdGVyPjwvZGVmcz48cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgZmlsbD0idHJhbnNwYXJlbnQiPjwvcmVjdD48cmVjdCB3aWR0aD0iNzAwIiBoZWlnaHQ9IjcwMCIgZmlsbD0iIzIzMjAyNiIgZmlsdGVyPSJ1cmwoI25ubm9pc2UtZmlsdGVyKSI+PC9yZWN0Pjwvc3ZnPg==");
+  }
+  .bg-gradient {
+    @apply blur-xl rounded-full;
+    z-index: -1;
+    width: 50%;
+    padding: 2rem;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #0e0d0d; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to left,
+      #0e0d0d,
+      #020202
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to left,
+      #080808,
+      #020202
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+</style>
