@@ -1,0 +1,63 @@
+---
+import { Image } from "astro:assets";
+---
+
+<div class="flex flex-grow flex-col justify-center items-center p-4 bg-pattern">
+  <div
+    class="relative flex flex-col max-w-xl self-center text-center motion-preset-bounce motion-duration-300"
+  >
+    <div class="px-9 py-9 flex items-center justify-center">
+      <Image
+        src="/assets/siro-diaz.png"
+        alt="profile"
+        width={200}
+        height={200}
+        class="mb-6 mx-auto motion-preset-fade motion-duration-1000 motion-delay-500 rounded-full"
+      />
+    </div>
+    <div class="px-9 py-12">
+      <h1 class="font-black text-white text-4xl">Siro Díaz Palazón</h1>
+      <h2 class="font-bold text-2xl text-white mt-1">Software Developer</h2>
+      <p class="text-xl font-semibold mt-2 mb-8">
+        Hi, I'm Siro. I'm a frontend web developer. I love to code, craft new
+        amazing stuff and share my knowledge with others. I'm a self-taught and
+        curious person about everything that can be done with code, SEO and a
+        good UX.
+      </p>
+
+      <span class="text-white font-bold text-xl">Cofounder of</span>
+      <a
+        href="https://skinclaireroutine.com"
+        target="_blank"
+        class="link link-hover font-semibold bg-raisingBlack text-white px-2 py-1 transition-all duration-300 hover:text-neutral-100"
+      >
+        SkinClaireRoutine & ComedoCheck
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .bg-gradient {
+    @apply blur-xl rounded-full;
+    z-index: -1;
+    width: 50%;
+    padding: 2rem;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #0e0d0d; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to left,
+      #212121,
+      #020202
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to left,
+      #212121,
+      #020202
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+</style>
